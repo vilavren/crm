@@ -1,0 +1,86 @@
+.button {
+	cursor: pointer;
+
+	display: inline-block;
+
+	font-family: "Bebas Neue", Arial, sans-serif;
+	line-height: normal;
+	text-align: center;
+	white-space: nowrap;
+
+	border: none;
+	border-radius: 5px;
+
+	transition: all 0.3s;
+}
+
+.large {
+	width: 140px;
+	height: 48px;
+	padding: 12px 20px;
+
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.medium {
+	padding: 7px 15px;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.primary {
+	color: #fff;
+	background-color: var(--dark-gray);
+}
+
+.secondary {
+	color: #fff;
+	background-color: var(--blue-gray-medium);
+}
+
+.secondary:hover {
+	color: #fff;
+	background-color: var(--blue-gray-dark);
+}
+
+.ghost {
+	color: var(--blue-gray-medium);
+	background-color: #fff;
+	border: 2px solid var(--blue-gray-medium);
+}
+
+.ghost:disabled {
+	color: var(--lighter-blue-gray);
+	background-color: #fff;
+	border: 2px solid var(--lighter-blue-gray);
+}
+
+.primary:disabled,
+.secondary:disabled {
+	color: var(--light-blue-gray);
+	background-color: var(--lighter-blue-gray);
+}
+
+.duoColor {
+	background-color: var(--very-light-blue-gray);
+	fill: var(--dark-gray);
+}
+
+.duoColor svg {
+	fill: var(--dark-gray);
+}
+
+.floatLarge {
+	width: 40px;
+	height: 40px;
+	padding: 12px;
+	border-radius: 12px;
+}
+
+.floatMedium {
+	width: 32px;
+	height: 32px;
+	padding: 8px;
+	border-radius: 8px;
+}

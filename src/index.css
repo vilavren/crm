@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('./assets/fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('./assets/fonts/BebasNeueRegular.woff') format('woff'),
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Avenir;
+  src: url('./assets/fonts/avenirlt_roman.woff2') format('woff2'),
+    url('./assets/fonts/avenirlt_roman.woff') format('woff'),
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/MontserratLight.woff2') format('woff2'),
+    url('./assets/fonts/MontserratLight.woff') format('woff'),
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/MontserratRegular.woff2') format('woff2'),
+    url('./assets/fonts/MontserratRegular.woff') format('woff'),
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/MontserratMedium.woff2') format('woff2'),
+    url('./assets/fonts/MontserratMedium.woff') format('woff'),
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/MontserratBold.woff2') format('woff2'),
+    url('./assets/fonts/MontserratBold.woff') format('woff'),
+}
+
+body {
+  margin: 0;
+  font-family: "Bebas Neue", Montserrat, Helvetica, sans-serif
+}
+
+:root {
+  --dark-gray: #050504;
+  --blue-gray-dark: #1F2D3D;
+  --blue-gray-medium: #3C4858;
+  --blue-gray-light: #8492A6;
+  --pale-blue-gray: #C2CEDB;
+  --light-blue-gray: #D3DCE6;
+  --very-light-blue-gray: #E5E9F2;
+  --lighter-blue-gray: #EFF2F7;
+  --very-light-gray: #F9FAFC;
 }
