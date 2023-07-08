@@ -15,11 +15,7 @@ export const Select: React.FC<SelectProps> = ({
 }: SelectProps) => {
   return (
     <>
-      <Form
-        border="rectangle"
-        className={cn(className, styles.form)}
-        {...props}
-      >
+      <Form className={cn(className, styles.form)} {...props}>
         <label className={styles.label}>Label</label>
         <div className={styles.wrapperSelect}>
           <select className={styles.select} placeholder={placeholder}>

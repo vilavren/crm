@@ -1,0 +1,61 @@
+.form {
+	width: 343px;
+}
+
+.label {
+	width: 100%;
+	margin-bottom: 8px;
+
+	font-family: "Bebas Neue", Helvetica, sans-serif;
+	font-size: 17px;
+	color: var(--blue-gray-light);
+}
+
+.textarea {
+	resize: none;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	width: 100%;
+	padding: 12px 16px;
+
+	color: var(--blue-gray-medium);
+
+	appearance: none;
+	border: 1px solid var(--light-blue-gray);
+	border-radius: 5px;
+	outline: none;
+}
+
+.form:hover .label {
+	color: var(--blue-gray-medium);
+}
+
+.form:hover .textarea {
+	color: var(--blue-gray-medium);
+	border: 1px solid var(--blue-gray-medium);
+}
+
+.form:focus .label {
+	color: var(--blue-gray-medium);
+}
+
+.form:focus .textarea {
+	color: var(--blue-gray-medium);
+	border: 1px solid var(--blue-gray-medium);
+}
+
+.form:active .textarea {
+	color: var(--blue-gray-medium);
+	border: 1px solid var(--blue-gray-medium);
+}
+
+.textarea::placeholder {
+	color: var(--light-blue-gray);
+}
+
+.form .textarea:disabled {
+	color: var(--light-blue-gray);
+}

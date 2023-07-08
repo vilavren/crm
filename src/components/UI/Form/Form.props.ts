@@ -6,5 +6,4 @@ export interface FormProps
     HTMLFormElement
   > {
   children: ReactNode
-  border: 'circle' | 'rectangle'
 }

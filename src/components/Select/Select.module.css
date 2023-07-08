@@ -1,3 +1,7 @@
+.form {
+	width: 343px;
+}
+
 .label {
 	width: 100%;
 	margin-bottom: 8px;
@@ -18,27 +22,22 @@
 	outline: none;
 }
 
+.wrapperSelect:hover {
+	border: 1px solid var(--blue-gray-medium);
+}
+
+
+.wrapperSelect:focus {
+	border: 1px solid var(--blue-gray-medium);
+}
+
 .select {
 	width: 100%;
 	appearance: none;
 	outline: none;
 }
 
-.form {
-	display: block;
-	padding: 0;
-	border: none;
-}
-
 .arrowSvg {
 	width: 18px;
 	height: 18px;
-}
-
-.form:hover {
-	border: none;
-}
-
-.wrapperSelect:hover {
-	border: 1px solid var(--blue-gray-medium);
 }

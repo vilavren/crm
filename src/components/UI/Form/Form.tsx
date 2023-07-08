@@ -7,17 +7,10 @@ import { FormProps } from './Form.props'
 export const Form: React.FC<FormProps> = ({
   className,
   children,
-  border,
   ...props
 }: FormProps) => {
   return (
-    <form
-      className={cn(className, styles.form, {
-        [styles.rectangle]: border === 'rectangle',
-        [styles.circle]: border === 'circle',
-      })}
-      {...props}
-    >
+    <form className={cn(className, styles.form)} {...props}>
       {children}
     </form>
   )

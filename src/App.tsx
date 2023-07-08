@@ -3,6 +3,7 @@ import React from 'react'
 import './App.css'
 import { Search } from './components/Search/Search'
 import { Select } from './components/Select/Select'
+import { Textarea } from './components/Textarea/Textarea'
 import { Button } from './components/UI/Button/Button'
 import { Input } from './components/UI/Input/Input'
 
@@ -57,6 +58,7 @@ function App() {
       <Input />
       <Search />
       <Select placeholder="Label" />
+      <Textarea placeholder="Label" />
     </div>
   )
 }

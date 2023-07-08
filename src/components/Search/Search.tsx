@@ -17,7 +17,7 @@ export const Search: React.FC<SearchProps> = ({
   const [search, setSearch] = useState<string>('')
 
   return (
-    <Form border="circle" className={cn(className)} {...props}>
+    <Form className={cn(className, styles.form)} {...props}>
       <ReactSVG className={styles.searchSvg} src={searchSvg} />
       <Input
         className={styles.input}
