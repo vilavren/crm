@@ -1,6 +1,9 @@
 import { DetailedHTMLProps, FormHTMLAttributes } from 'react'
 
-export type SelectProps = DetailedHTMLProps<
-  FormHTMLAttributes<HTMLFormElement>,
-  HTMLFormElement
->
+export interface SelectProps
+  extends DetailedHTMLProps<
+    FormHTMLAttributes<HTMLFormElement>,
+    HTMLFormElement
+  > {
+  placeholder: string
+}

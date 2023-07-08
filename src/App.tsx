@@ -56,7 +56,7 @@ function App() {
       <Button size="floatMedium" appearance="duoColor" icon="lines" />
       <Input />
       <Search />
-      <Select />
+      <Select placeholder="Label" />
     </div>
   )
 }

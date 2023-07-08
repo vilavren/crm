@@ -1,0 +1,44 @@
+.label {
+	width: 100%;
+	margin-bottom: 8px;
+	font-family: "Bebas Neue", Helvetica, sans-serif;
+	font-size: 17px;
+}
+
+.wrapperSelect {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	padding: 16px;
+
+	appearance: none;
+	border: 1px solid var(--light-blue-gray);
+	border-radius: 5px;
+	outline: none;
+}
+
+.select {
+	width: 100%;
+	appearance: none;
+	outline: none;
+}
+
+.form {
+	display: block;
+	padding: 0;
+	border: none;
+}
+
+.arrowSvg {
+	width: 18px;
+	height: 18px;
+}
+
+.form:hover {
+	border: none;
+}
+
+.wrapperSelect:hover {
+	border: 1px solid var(--blue-gray-medium);
+}
