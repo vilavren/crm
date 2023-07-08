@@ -1,6 +1,5 @@
 .input {
-	width: 343px;
-	padding: 12px 0;
+	width: 100%;
 
 	font-family: Avenir, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -8,5 +7,9 @@
 	font-style: normal;
 	line-height: 24px;
 
-	border: 1px solid var(--blue-gray-medium);
+	border: none;
+}
+
+.input::placeholder {
+	color: var(--light-blue-gray);
 }
