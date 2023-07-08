@@ -2,6 +2,7 @@ import React from 'react'
 
 import './App.css'
 import { Search } from './components/Search/Search'
+import { Select } from './components/Select/Select'
 import { Button } from './components/UI/Button/Button'
 import { Input } from './components/UI/Input/Input'
 
@@ -55,6 +56,7 @@ function App() {
       <Button size="floatMedium" appearance="duoColor" icon="lines" />
       <Input />
       <Search />
+      <Select />
     </div>
   )
 }

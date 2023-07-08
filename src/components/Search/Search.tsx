@@ -2,6 +2,7 @@ import cn from 'classnames'
 import React, { useState } from 'react'
 import { ReactSVG } from 'react-svg'
 
+import { Form } from '../UI/Form/Form'
 import { Input } from '../UI/Input/Input'
 
 import closeSvg from './close.svg'
@@ -16,7 +17,7 @@ export const Search: React.FC<SearchProps> = ({
   const [search, setSearch] = useState<string>('')
 
   return (
-    <form className={cn(className, styles.form)} {...props}>
+    <Form border="circle" className={cn(className)} {...props}>
       <ReactSVG className={styles.searchSvg} src={searchSvg} />
       <Input
         className={styles.input}
@@ -29,6 +30,6 @@ export const Search: React.FC<SearchProps> = ({
       <button className={styles.button}>
         <ReactSVG src={closeSvg} />
       </button>
-    </form>
+    </Form>
   )
 }
