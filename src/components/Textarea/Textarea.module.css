@@ -29,33 +29,35 @@
 	outline: none;
 }
 
-.form:hover .label {
-	color: var(--blue-gray-medium);
-}
-
-.form:hover .textarea {
-	color: var(--blue-gray-medium);
-	border: 1px solid var(--blue-gray-medium);
-}
-
-.form:focus .label {
-	color: var(--blue-gray-medium);
-}
-
-.form:focus .textarea {
-	color: var(--blue-gray-medium);
-	border: 1px solid var(--blue-gray-medium);
-}
-
-.form:active .textarea {
-	color: var(--blue-gray-medium);
-	border: 1px solid var(--blue-gray-medium);
-}
-
 .textarea::placeholder {
 	color: var(--light-blue-gray);
 }
 
-.form .textarea:disabled {
+.textarea:disabled {
+	border: 1px solid var(--light-blue-gray);
+}
+
+.form:hover .label {
+	color: var(--blue-gray-medium);
+}
+
+.form:hover .textarea:hover {
+	border: 1px solid var(--blue-gray-medium);
+}
+
+.form:hover .textarea:disabled {
+	border: 1px solid var(--light-blue-gray);
+}
+
+.disabled,
+.disabledLabel {
+	cursor: default;
+}
+
+.disabled {
 	color: var(--light-blue-gray);
+}
+
+.disabledLabel {
+	color: var(--blue-gray-light);
 }

@@ -59,6 +59,7 @@ function App() {
       <Search />
       <Select placeholder="Label" />
       <Textarea placeholder="Label" />
+      <Textarea placeholder="disabled" disabled />
     </div>
   )
 }

@@ -9,16 +9,29 @@ import { TextareaProps } from './Textarea.props'
 export const Textarea: React.FC<TextareaProps> = ({
   className,
   placeholder,
+  disabled,
   ...props
 }: TextareaProps) => {
   return (
     <>
-      <Form className={cn(className, styles.form)} {...props}>
-        <label className={styles.label}>Label</label>
+      <Form
+        className={cn(className, styles.form, {
+          [styles.disabled]: disabled === true,
+        })}
+        {...props}
+      >
+        <label
+          className={cn(className, styles.form, {
+            [styles.disabledLabel]: disabled === true,
+          })}
+        >
+          Label
+        </label>
         <div className={styles.wrapperSelect}></div>
         <textarea
           className={styles.textarea}
           placeholder={placeholder}
+          disabled={disabled}
         ></textarea>
       </Form>
     </>
