@@ -10,14 +10,11 @@ import styles from './Search.module.css'
 import { SearchProps } from './Search.props'
 import searchSvg from './search.svg'
 
-export const Search: React.FC<SearchProps> = ({
-  className,
-  ...props
-}: SearchProps) => {
+export const Search: React.FC<SearchProps> = ({ className }) => {
   const [search, setSearch] = useState<string>('')
 
   return (
-    <Form className={cn(className, styles.form)} {...props}>
+    <Form className={cn(className, styles.form)}>
       <ReactSVG className={styles.searchSvg} src={searchSvg} />
       <Input
         className={styles.input}

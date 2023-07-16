@@ -1,10 +1,5 @@
-import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
-export interface CheckBoxProps
-  extends DetailedHTMLProps<
-    HTMLAttributes<HTMLLabelElement>,
-    HTMLLabelElement
-  > {
+export interface CheckBoxProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: ReactNode
-  appearance?: 'primary' | 'secondary'
 }

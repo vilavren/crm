@@ -8,7 +8,7 @@ export const Form: React.FC<FormProps> = ({
   className,
   children,
   ...props
-}: FormProps) => {
+}) => {
   return (
     <form className={cn(className, styles.form)} {...props}>
       {children}

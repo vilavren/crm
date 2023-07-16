@@ -12,7 +12,7 @@ export const Select: React.FC<SelectProps> = ({
   className,
   placeholder,
   ...props
-}: SelectProps) => {
+}) => {
   return (
     <>
       <Form className={cn(className, styles.form)} {...props}>

@@ -14,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   icon,
   className,
   ...props
-}: ButtonProps) => {
+}) => {
   return (
     <button
       className={cn(styles.button, className, {

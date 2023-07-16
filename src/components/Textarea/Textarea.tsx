@@ -11,7 +11,7 @@ export const Textarea: React.FC<TextareaProps> = ({
   placeholder,
   disabled,
   ...props
-}: TextareaProps) => {
+}) => {
   return (
     <>
       <Form
