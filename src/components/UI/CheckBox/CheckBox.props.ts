@@ -1,13 +1,10 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react'
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react'
 
 export interface CheckBoxProps
   extends DetailedHTMLProps<
-    ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
+    HTMLAttributes<HTMLLabelElement>,
+    HTMLLabelElement
   > {
   children?: ReactNode
-  size: 'large' | 'medium' | 'floatLarge' | 'floatMedium'
-  appearance: 'primary' | 'secondary' | 'ghost' | 'default' | 'duoColor'
-
-  icon?: 'close' | 'lines' | 'loading' | 'search'
+  appearance?: 'primary' | 'secondary'
 }

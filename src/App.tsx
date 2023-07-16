@@ -5,6 +5,7 @@ import { Search } from './components/Search/Search'
 import { Select } from './components/Select/Select'
 import { Textarea } from './components/Textarea/Textarea'
 import { Button } from './components/UI/Button/Button'
+import { CheckBox } from './components/UI/CheckBox/CheckBox'
 import { Input } from './components/UI/Input/Input'
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
       <Select placeholder="Label" />
       <Textarea placeholder="Label" />
       <Textarea placeholder="disabled" disabled />
+      <CheckBox />
     </div>
   )
 }
